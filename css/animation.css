@@ -1,0 +1,65 @@
+h1:hover {
+	transform: translateY(-7%) rotate(1deg);
+}
+
+@keyframes fadeIn {
+	from{
+		opacity: 0;
+		transform: translateX(-3%);
+	}
+	to{
+		transform: translateX(0);
+		opacity: 1.0;
+	}
+}
+
+@keyframes slideIn {
+	from {
+		transform: translateX(-3%);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1.0;
+	}
+}
+
+.headerText > p:hover {
+	transform: translateY(-5%);
+}
+
+.sidePanel:hover {
+	transform: translateX(0);
+	opacity: 0.85;
+}
+
+.sidePanel > a > i:hover {
+	transform: rotate(8deg);
+	opacity: 0.85;
+}
+
+.navbar > ul > li > a:hover {
+	border-bottom: 3px solid #96b0bc;
+}
+
+.dropdown:hover > .dropdown-content {
+	display: block;
+	animation: dropdownSlideY ease 1.5s;
+}
+
+@keyframes dropdownSlideY {
+	from {
+		opacity: 0;
+		transform: translateX(-2%);
+	}
+	to {
+		opacity: 1.0;
+		transform: translateX(0);
+	}
+}
+
+.sectionIndex_image > img:hover {
+	opacity: 1.0;
+	transform: scale(1.06);
+	transition: transform ease 1.5s, opacity ease 1.5s;
+}
